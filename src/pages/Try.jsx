@@ -3,7 +3,7 @@ import "./Try.css";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 
-const Try = ({ msg = "todo try " }) => {
+const Try = ({ msg = "todo List " }) => {
   const [todo, setTodo] = useState([]);
   const [inputValue, setInputValue] = useState();
   const [complete, SetComplete] = useState([]);
