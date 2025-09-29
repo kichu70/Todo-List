@@ -3,6 +3,7 @@ import './App.css';
 import { useState } from 'react';
 import { BrowserRouter, Routes,Route } from 'react-router-dom';
 import Try from './pages/Try';
+import Home from './component/home/Home';
 // import Home from './component/home/Home';
 
 
@@ -11,9 +12,9 @@ function App() {
 
     <div>
       {/* <Home/> */}
-      <Try/>
+      {/* <Try/> */}
       <Routes>
-        <Route path='/' element={""}/>
+        <Route path='/try' element={<Home/>}/>
       </Routes>
     </div>
 

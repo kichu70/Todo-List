@@ -30,6 +30,7 @@ body{
 .TextField input{
     /* color:  #ff694b !important; */
     color: white;
+    background-color: transparent !important;
 }
 .submit{
     background-color: rgb(255, 42, 0) !important;
@@ -75,7 +76,6 @@ body{
     /* left: 100px; */
     top: 0;
 }
-
 .submit:active {
   background-color: rgb(236, 4, 4) !important;
 }

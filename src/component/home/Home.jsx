@@ -5,7 +5,7 @@ const Home = ({ msg = "todo lists " }) => {
   const [inputValue, setInputvalue] = useState("");
 
   const add = () => {
-    if (inputValue.trim() !== "") {
+    if ((inputValue || "").trim() !== "") {
       // setTodo([...todo, inputValue]);
       if (!todo.includes(inputValue.trim())) {
         setTodo([...todo, inputValue.trim()]);

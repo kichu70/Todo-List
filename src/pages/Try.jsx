@@ -35,6 +35,7 @@ const Try = ({ msg = "todo List " }) => {
   }
   return (
     <div>
+      <form onSubmit={(e)=>{e.preventDefault();add();}}>
       <div className="main">
         <h1>{msg}</h1>
         <TextField
@@ -47,7 +48,7 @@ const Try = ({ msg = "todo List " }) => {
           onChange={(e) => setInputValue(e.target.value)}
         />{" "}
         <div>
-          <Button className="submit" variant="contained" onClick={add}>
+          <Button type="submit" className="submit" variant="contained" onClick={add}>
             submit
           </Button>
           <Button variant="contained" className="dltall" onClick={dltall}>
@@ -70,6 +71,7 @@ const Try = ({ msg = "todo List " }) => {
           </div>
         ))}
       </div>
+      </form>
     </div>
   );
 };
